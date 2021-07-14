@@ -13,6 +13,9 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
+.section-title{
+  color: orangered;
+}
 
 /* --------------------------------
         home container styles
@@ -38,6 +41,11 @@ body {
   background-color: #e02c6d;
   color: #ffffff;
   text-decoration: none;
+  transition: background-color 0.5s linear;
+}
+.watch-btn:hover {
+  color: #e02c6d;
+  background-color: #ffffff;
 }
 .fa-arrow-right {
   margin-left: 8px;
@@ -52,7 +60,6 @@ body {
  -------------------------------- */
 .players {
   width: 1050px;
-  /* justify-content: center; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -80,32 +87,54 @@ body {
   margin-top: 0;
   margin-bottom: 18px;
 }
-/* -----------------------------
-    highlight container start
--------------------------------- */
-.highlight-container{
-  display: flex;
-  width: 80%;
-  justify-content: center;
+/* ------------------------------------------------------------------
+ news container  style start
+-------------------------------------------------------------------*/
+.container {
+  background-color: #e5e5e5;
   margin: 0 auto;
-  margin-top: 165px;
-  margin-bottom: 158px;
-}
-.highlight-info{
-  justify-content: center;
-}
-.highlight-info .page-title{
-  color: #000;
-  margin-top: 64px;
-  margin-bottom: 8px;
-  font-size: 48px;
-}
-.highlight-info .player-info{
-margin-bottom: 24px;
+  width: 1050px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
 }
 
-.highlight-container img{
-  width: 50%;
+.top-news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
+.news-detail {
+  margin: 5px 5px;
+}
+.news-container img {
+  width: 100%;
+  height: 256px;
+}
+/*------------------------------------
+                   online shop
+ -------------------------------------- */
+.online-container {
+  margin-bottom: 30px;
+}
+.top-online {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.online-products {
+  background-color: #fff;
+  padding: 10px 10px;
+}
+.online-products img {
+  width: 100%;
+  height: 256px;
+}
+.buy-btn {
+  border: none;
+  padding: 5px 10px;
+  background-color: orangered;
+  border-radius: 10px;
 }
 /*------------------------------
              footer start 
@@ -125,8 +154,85 @@ margin-bottom: 24px;
   height: 32px;
   margin-top: 20px;
 }
-.footer-container p{
+.footer-container p {
   font-size: 18px;
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
+}
+/*-----------------------------------------------------
+ media query start
+ --------------------------------------------------------*/
+
+/* mobile device */
+@media only screen and (max-width: 688px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 47px;
+  }
+  .home-info {
+    margin-left: 0;
+    margin-top: 112px;
+    margin-bottom: 30px;
+    margin-left: 16px;
+  }
+  .page-title {
+    font-size: 36px;
+  }
+  .watch-btn {
+    margin-left: 19px;
+  }
+  .home-image img {
+    width: 329px;
+    height: 259.17px;
+    margin-left: 15px;
+    margin-top: 50px;
+  }
+  /* home section end */
+  .container{
+    margin-top: 0;
+  }
+  .players {
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+  }
+  .player {
+    width: 330px;
+    height: 474px;
+    margin-bottom: 24px;
+  }
+  .player-image {
+    width: 100%;
+  }
+  /* player end */
+  .news-container,
+  .online-products {
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  .product-info p {
+    margin: 0;
+  }
+  /* news & online Products end */
+  .footer-container img {
+    margin-top: 20px;
+    width: 150px;
+    height: 63px;
+  }
+  .icon-container{
+    margin-top: 29px;
+  }
+  .footer-container p {
+    margin-bottom: 0;
+    padding-bottom: 187px;
+  }
+  .players,
+  .top-news,
+  .top-online {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
