@@ -5,13 +5,12 @@
 /* -----------------------------------
           google font for button 
 ---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* ------------------------------------
                 common styles
 ----------------------------------------- */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #e5e5e5;
   margin: 0;
 }
 
@@ -29,18 +28,18 @@ body {
 .home-info {
   margin-left: 156px;
 }
-.home-page-title {
+.page-title {
   font-size: 64px;
   color: #ffffff;
 }
 .watch-btn {
   padding: 10px 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #e02c6d;
   color: #ffffff;
   text-decoration: none;
 }
-.fa-arrow-right{
+.fa-arrow-right {
   margin-left: 8px;
 }
 .home-image img {
@@ -51,7 +50,7 @@ body {
 /*-------------------------------
                 players style
  -------------------------------- */
-.players{
+.players {
   width: 1050px;
   /* justify-content: center; */
   margin: 0 auto;
@@ -60,23 +59,74 @@ body {
   grid-row-gap: 30px;
   grid-column-gap: 27px;
 }
-.player{
+.player {
   padding: 15px 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
 }
- .player-image{
+.player-image {
   width: 300px;
   height: 256px;
 }
-.player-name{
-  color: #18191F;
+.player-name {
+  color: #18191f;
   margin-top: 16px;
   margin-bottom: 10px;
   font-size: 28px;
 }
-.player-info{
- color: #6C6C6C;
- font-size: 16px;
+.player-info {
+  color: #6c6c6c;
+  font-size: 16px;
   margin-top: 0;
   margin-bottom: 18px;
+}
+/* -----------------------------
+    highlight container start
+-------------------------------- */
+.highlight-container{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 165px;
+  margin-bottom: 158px;
+}
+.highlight-info{
+  justify-content: center;
+}
+.highlight-info .page-title{
+  color: #000;
+  margin-top: 64px;
+  margin-bottom: 8px;
+  font-size: 48px;
+}
+.highlight-info .player-info{
+margin-bottom: 24px;
+}
+
+.highlight-container img{
+  width: 50%;
+}
+/*------------------------------
+             footer start 
+ --------------------------------*/
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 63px;
+}
+.footer-container img {
+  width: 483.87px;
+  height: 110px;
+}
+.fab {
+  width: 32px;
+  height: 32px;
+  margin-top: 20px;
+}
+.footer-container p{
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 }
